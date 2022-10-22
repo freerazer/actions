@@ -1,0 +1,27 @@
+# -----------------------
+#
+# Maxim Boyko
+#
+# -----------------------
+
+name: CI_intergration
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  testing: 
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: print hello
+      run: echo 'Hello Maxim'
+      
+  my_deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: print another hello
+      run: echo "Hello from my_deploy"
